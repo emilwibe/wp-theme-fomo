@@ -1,0 +1,275 @@
+/* Case */
+.flex-mod-case {
+  margin-top: var(--global-margin);
+}
+.flex-mod-case > .flex-mod-inner {
+  border: 1px solid var(--clr-grey);
+  border-radius: var(--border-radius-l);
+  padding: var(--global-padding);
+}
+.case-outer {
+  display: flex;
+}
+.case-splide-text {
+  height: 100%;
+}
+.case-text-outer {
+  width: 50%;
+}
+.case-text-outer .splide__track {
+  height: 100%;
+}
+.case-text-outer .splide__slide {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.flex-case-text-wrapper {
+  max-width: 469px;
+}
+.case-card-outer {
+  padding: 4px;
+  width: 50%;
+}
+.case-card-outer .splide__pagination {
+  bottom: -25px;
+}
+.case-card-outer .splide__pagination .splide__pagination__page {
+  height: 6px;
+  transform: scale(1);
+  width: 6px;
+}
+.case-card-outer .splide__pagination__page.is-active {
+  background-color: var(--clr-black-blue);
+}
+.case-card-outer .splide__slide,
+.case-card-outer .flex-case-img-wrapper {
+  display: flex;
+}
+.flex-case-text-wrapper {
+  align-self: center;
+}
+.case-heading {
+  margin-bottom: 0;
+}
+.flex-case-text {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-main);
+  line-height: 150%;
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+.case-small-text {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-small);
+  line-height: 150%;
+  margin-bottom: 0;
+  margin-top: 48px;
+  opacity: 0.66;
+}
+.case-text-outer .btn-container {
+  margin-top: 48px;
+}
+.case-card {
+  aspect-ratio: 661 / 744;
+  background-color: var(--clr-light-rose);
+  border-radius: var(--border-radius-l);
+  display: flex;
+  flex-direction: column;
+  padding: var(--global-padding);
+}
+.case-card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.case-card-content-name {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.case-card-content-subtitle {
+  margin-bottom: 0;
+  margin-top: 8px;
+  opacity: 0.66;
+}
+.case-card-content-img {
+  width: 40%;
+}
+.case-card-content-img img {
+  aspect-ratio: 233 / 285;
+  border-radius: var(--border-radius-l);
+  object-fit: cover;
+  object-position: center;
+}
+img.ui-quotation-mark {
+  height: auto;
+  width: 29px;
+}
+.case-card-quote {
+  margin-top: auto;
+}
+.case-card-quote h3 {
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+/* STACK EFFECT */
+.case-card-outer .splide__slide:nth-child(3n + 1) .case-card {
+  background-color: var(--clr-light-rose);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 1)
+  .flex-case-img-wrapper::before {
+  background-color: var(--clr-bordeaux);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 1)
+  .flex-case-img-wrapper::after {
+  background-color: var(--clr-grey);
+}
+.case-card-outer .splide__slide:nth-child(3n + 2) .case-card {
+  background-color: var(--clr-bordeaux);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 2)
+  .flex-case-img-wrapper::before {
+  background-color: var(--clr-grey);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 2)
+  .flex-case-img-wrapper::after {
+  background-color: var(--clr-light-rose);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 2)
+  .case-card
+  :is(.case-card-content-name, .case-card-content-subtitle, .case-card-quote) {
+  color: var(--clr-white);
+}
+.case-card-outer .splide__slide:nth-child(3n + 3) .case-card {
+  background: var(--clr-grey);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 3)
+  .flex-case-img-wrapper::before {
+  background-color: var(--clr-light-rose);
+}
+.case-card-outer
+  .splide__slide:nth-child(3n + 3)
+  .flex-case-img-wrapper::after {
+  background-color: var(--clr-bordeaux);
+}
+
+.case-card {
+  margin-left: 36px;
+}
+.flex-case-img-wrapper {
+  position: relative;
+}
+.flex-case-img-wrapper::before {
+  border-radius: var(--border-radius-l);
+  content: "";
+  display: block;
+  height: calc(100% - calc(2 * 32px));
+  left: 21px;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  z-index: -1;
+}
+.flex-case-img-wrapper::after {
+  border-radius: var(--border-radius-l);
+  content: "";
+  display: block;
+  height: calc(100% - calc(2 * 61px));
+  left: 6px;
+  position: absolute;
+  top: 61px;
+  width: 100%;
+  z-index: -2;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-mod-case {
+    margin-top: 10px;
+  }
+  .flex-mod-case > .flex-mod-inner {
+    padding-bottom: 68px;
+    padding-top: 80px;
+  }
+  .flex-case-text-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: none;
+  }
+  .flex-case-text {
+    margin-top: 12px;
+  }
+  .case-small-text {
+    margin-top: 24px;
+  }
+  .case-text-outer .btn-container {
+    margin-top: 24px;
+  }
+  .case-card-outer .case-card {
+    aspect-ratio: 313 / 418;
+    padding: 30px 20px;
+  }
+  .case-card-outer .case-card-quote {
+    font-size: 18px;
+  }
+  .case-card-outer {
+    margin-top: 32px;
+  }
+  .case-card-outer .splide__pagination {
+    bottom: -42px;
+  }
+  .flex-mod-case .splide__arrows {
+    display: flex;
+    justify-content: space-between;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    width: 46px;
+  }
+  .flex-mod-case .splide__arrows .splide__arrow {
+    background-color: transparent;
+    height: 18px;
+    position: static;
+    transform: translateY(0);
+    width: 18px;
+    z-index: 10 !important;
+  }
+  .flex-mod-case .splide__arrows .splide__arrow.splide__arrow--prev {
+    background-image: url(../../assets/ui/icons/arrow_circle_splide.svg);
+  }
+  .flex-mod-case .splide__arrows .splide__arrow.splide__arrow--next {
+    background-image: url(../../assets/ui/icons/arrow_circle_splide.svg);
+    transform: rotate(180deg);
+  }
+  .flex-mod-case .splide__arrows .splide__arrow svg {
+    fill: transparent !important;
+    stroke: transparent !important;
+  }
+  .flex-mod-case .splide__arrow:disabled {
+    opacity: 1 !important;
+  }
+  .case-outer {
+    flex-wrap: wrap;
+  }
+  .case-outer .splide__list {
+    align-items: center;
+  }
+  .case-text-outer,
+  .case-card-outer {
+    width: 100%;
+  }
+
+  .flex-case-img-wrapper::before {
+    left: 26px;
+  }
+  .flex-case-img-wrapper::after {
+    left: 14px;
+  }
+}

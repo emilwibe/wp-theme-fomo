@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--clr-purple);
+  color: var(--clr-white) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding-bottom: var(--global-padding);
+}
+.overlay-is-visible {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+nav ul a {
+  text-decoration: none;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea,
+button {
+  color: rgba(20, 20, 43, 0.5);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-small);
+}

@@ -1,0 +1,59 @@
+/*
+  VISION
+*/
+.flex-mod-vision .flex-mod-inner {
+  aspect-ratio: 1512 / 597;
+  height: 40%;
+}
+.vision-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 3fr;
+}
+.flex-vision-img-container {
+  height: 100%;
+  position: relative;
+}
+.flex-vision-img-container img {
+  border-radius: var(--border-radius-l);
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.flex-vision-text {
+  bottom: var(--global-padding);
+  color: var(--clr-white);
+  font-size: 54px;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 682px;
+  position: absolute;
+  right: var(--global-padding);
+  text-align: right;
+  z-index: 10;
+}
+@media screen and (max-width: 1024px) {
+  .vision-grid {
+    display: block;
+    padding: var(--global-padding) 0;
+  }
+  .flex-mod-vision .flex-mod-inner {
+    aspect-ratio: auto;
+    height: auto;
+  }
+  .flex-mod-vision .flex-mod-inner .flex-vision-img-container:nth-child(1) {
+    height: 200px;
+    width: auto;
+  }
+  .flex-mod-vision .flex-mod-inner .flex-vision-img-container:nth-child(2) {
+    height: 525px;
+    margin-top: var(--space-20);
+    width: auto;
+  }
+  .flex-vision-text {
+    font-size: 40px;
+    max-width: none;
+  }
+}

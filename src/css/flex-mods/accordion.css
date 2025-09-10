@@ -1,0 +1,99 @@
+/* Accordion */
+.flex-mod-accordion .accordion-headings {
+  max-width: 650px;
+}
+.flex-mod-accordion .accordion-list {
+  margin-top: var(--space-80);
+}
+.flex-mod-accordion .accordion-item {
+  position: relative;
+}
+
+.flex-mod-accordion .accordion-list-img {
+  align-self: center;
+  aspect-ratio: 70 / 85;
+  border-radius: var(--border-radius-s);
+  height: 60%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+.flex-mod-accordion h3 {
+  align-items: center;
+  align-self: center;
+  background-size: auto 24px;
+  border-bottom: 1px solid var(--clr-grey);
+  display: flex;
+  margin-bottom: 0;
+  padding-bottom: var(--global-padding);
+  padding-left: var(--space-104);
+  padding-top: var(--global-padding);
+  position: relative;
+  width: auto;
+}
+.flex-mod-accordion h3:hover {
+  cursor: pointer;
+}
+.flex-mod-accordion h3 span {
+  background-image: url(../../assets/ui/accordion-trigger.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-tiny);
+  margin-left: auto;
+  padding: 20px;
+  padding-right: 40px;
+  position: relative;
+  z-index: -1;
+}
+.flex-mod-accordion .accordion-trigger {
+  background-image: none;
+}
+.flex-mod-accordion .accordion-p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-24);
+}
+.flex-mod-accordion .accordion-wysiwyg {
+  font-family: var(--font-family);
+  max-width: 692px;
+}
+.flex-mod-accordion .accordion-wysiwyg > *:first-child {
+  margin-top: 0;
+}
+.flex-mod-accordion .accordion-content-img {
+  aspect-ratio: 276 / 335;
+  border-radius: var(--border-radius-s);
+  object-fit: cover;
+  object-position: center;
+  width: 20%;
+}
+
+@media screen and (max-width: 960px) {
+  .flex-mod-accordion .accordion-p {
+    flex-wrap: wrap;
+  }
+  .flex-mod-accordion .accordion-wysiwyg {
+    max-width: none;
+  }
+  .flex-mod-accordion .accordion-content-img {
+    width: 100%;
+  }
+  .accordion-p {
+    padding-right: 0;
+  }
+  .flex-mod-accordion h3 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .flex-mod-accordion h3 span {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+  }
+}

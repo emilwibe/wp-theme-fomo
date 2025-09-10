@@ -1,0 +1,141 @@
+.flex-mod-benefits {
+  position: relative;
+}
+.flex-mod-benefits-head {
+  display: flex;
+  align-items: center;
+}
+.flex-mod-benefits-head .benefits-text {
+  padding-right: var(--global-padding);
+  width: 50%;
+}
+.flex-mod-benefits-head .benefits-text .benefits-heading {
+  margin-top: 0;
+}
+.flex-mod-benefits-head .benefits-img {
+  padding-left: var(--global-padding);
+  width: 50%;
+}
+.flex-mod-benefits-head .benefits-img img {
+  aspect-ratio: 660 / 440;
+  border-radius: var(--border-radius-l);
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.flex-mod-benefits-acc-heading {
+  margin-bottom: 0;
+}
+.flex-mod-benefits-acc-outer {
+  display: flex;
+  gap: 20px;
+  margin-top: calc(2 * var(--global-margin));
+}
+
+.flex-mod-benefits-acc-outer .flex-mod-benefits-acc-left {
+  width: 50%;
+}
+.flex-mod-benefits-acc-outer .flex-mod-benefits-acc-right {
+  width: 50%;
+}
+.flex-mod-benefits-acc-outer .faq-accordion-container {
+  grid-template-columns: 100%;
+  margin-top: 24px;
+}
+.flex-mod-benefits .faq-accordion-container > div:nth-child(even) .faq-item {
+  background-color: #462f71;
+}
+.flex-mod-benefits .load-more-container {
+  display: none;
+}
+.flex-mod-benefits .trustpilot-container {
+  width: fit-content;
+}
+.flex-mod-benefits::after {
+  background-color: var(--clr-light-rose);
+  content: '';
+  display: block;
+  height: 136%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -250px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-mod-benefits::after {
+    height: 4000px;
+    top: -300px;
+  }
+  .flex-mod-benefits .trustpilot-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+  }
+  .flex-mod-benefits-head {
+    flex-wrap: wrap;
+  }
+  .flex-mod-benefits-head .benefits-text {
+    padding-right: 0;
+    width: 100%;
+  }
+  .flex-mod-benefits-head .benefits-img {
+    margin-top: 32px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .flex-mod-benefits .faq-accordion-container > div + div {
+    margin-top: 0;
+  }
+  .flex-mod-benefits-acc-outer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(2 * var(--global-margin));
+  }
+
+  .flex-mod-benefits-acc-outer .flex-mod-benefits-acc-left {
+    width: 100%;
+  }
+  .flex-mod-benefits-acc-outer {
+  }
+  .flex-mod-benefits-acc-outer .flex-mod-benefits-acc-right {
+    margin-top: calc(4 * var(--global-margin));
+    width: 100%;
+  }
+  .flex-mod-benefits .load-more-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn.load-more {
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-grey);
+    border-radius: 100px;
+    display: block;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-small);
+    line-height: 150%;
+    margin-top: var(--space-32);
+    padding: 8px 18px;
+    text-align: center;
+  }
+  .btn.load-more:hover {
+    cursor: pointer;
+  }
+  .flex-mod-benefits .faq-accordion-container > div:nth-child(n + 4) {
+    display: none;
+  }
+  .flex-mod-benefits
+    .faq-accordion-container.is-visible
+    > div:nth-child(n + 4) {
+    display: block;
+  }
+}
+
+.faq-item-content p {
+  font-size: var(--font-size-main);
+  line-height: 150%;
+}
+.flex-mod-benefits .faq-is-open+.faq-item-content {
+  
+}

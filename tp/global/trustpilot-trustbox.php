@@ -1,0 +1,1 @@
+<!-- TrustBox widget - Micro Star --> <div class="trustpilot-widget" data-locale="en-AU" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="46d499c2000064000500c70c" data-style-height="24px" data-style-width="100%"> <a href="https://au.trustpilot.com/review/www.fomo.dk" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget -->

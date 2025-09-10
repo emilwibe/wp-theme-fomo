@@ -1,0 +1,110 @@
+/*
+  Tabs
+*/
+.flex-mod-tabs {
+  background-color: var(--clr-light-blue);
+  padding-bottom: var(--global-padding);
+  padding-top: 120px;
+}
+.flex-tabs-sub-heading {
+  margin-bottom: 0;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.flex-mod-tabs img {
+  aspect-ratio: 712 / 684;
+  border-radius: var(--border-radius-l);
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.flex-tabs-img {
+  grid-column: 1 / 7;
+}
+.flex-tabs-accordion {
+  align-items: center;
+  display: flex;
+  grid-column: 7 / 13;
+  justify-content: center;
+  padding-left: 71px;
+  padding-right: var(--space-50);
+  width: 100%;
+}
+.flex-tabs-accordion .tabs-accordion {
+  margin-right: 49px;
+  width: 100%;
+}
+.accordion-trigger {
+  background-image: url(../../assets/ui/plus-white.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 31px;
+  color: var(--clr-purple);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-right: 31px;
+}
+.tabs-accordion-item:nth-child(n + 2) .accordion-trigger {
+  margin-top: 48px;
+}
+.tabs-accordion-item + .tabs-accordion-item {
+  margin-top: var(--space-32);
+}
+.accordion-p {
+  margin-bottom: 0;
+  margin-top: 24px;
+  max-height: 200px;
+  opacity: 1;
+  overflow: hidden;
+  padding-right: calc((100% / 12 / 2) + 18px);
+  transition: opacity 450ms, margin-top 450ms, max-height 450ms;
+}
+.accordion-trigger.is-closed + .accordion-p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+}
+.tabs-text-container {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  max-width: 650px;
+}
+.tabs-heading {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media screen and (max-width: 1024px) {
+  .flex-mod-tabs {
+    margin-top: 10px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  .flex-mod-tabs .l-grid-global {
+    row-gap: 0;
+  }
+  .flex-tabs-img {
+    grid-column: 1 / 13;
+  }
+  .flex-tabs-accordion {
+    align-items: normal;
+    grid-column: 1 / 13;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 32px;
+    padding-left: var(--space-20);
+    padding-right: var(--space-20);
+  }
+  .flex-tabs-accordion .tabs-accordion {
+    margin-right: 0;
+  }
+  .tabs-accordion-item:nth-child(n + 2) .accordion-trigger {
+    margin-top: 24px;
+  }
+  .accordion-p {
+    margin-top: 16px;
+  }
+  .accordion-trigger {
+    font-size: 26px;
+  }
+}

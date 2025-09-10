@@ -1,0 +1,116 @@
+:root {
+  --animation-duration: 450ms;
+  --animation-cb: easeOutQuad;
+  --border-radius-l: 20px;
+  --border-radius-s: 8px;
+  --nav-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --clr-black-blue: #14142b;
+  --clr-purple: rgb(42, 16, 92);
+  --clr-grey: #dfdfdf;
+  --clr-grey-light: #f5f5f5;
+  --clr-coral: #ff8689;
+  --clr-bordeaux: #3b193d;
+  --clr-light-rose: #ffebe1;
+  --clr-white: #fff;
+  --clr-light-blue: #daeafd;
+  --font-family: Parkinsans;
+  --font-secondary: "Inter";
+  --font-size-large: 24px;
+  --font-size-display: 22px;
+  --font-size-main: 17px;
+  --font-size-small: 14px;
+  --font-size-tiny: 12px;
+  --global-margin: var(--space-32);
+  --global-padding: var(--space-40);
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-54: 54px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-104: 104px;
+  --splide-card-offset: calc(100% - 60px);
+}
+body {
+  color: var(--clr-black-blue);
+  font-family: var(--font-family);
+  font-size: var( --font-size-main );
+  /*font-weight: 300;*/
+}
+h1 {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 110%;
+}
+h2 {
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 110%;
+}
+h3 {
+  font-size: 31px;
+  font-weight: 300;
+  margin-top: 0;
+  line-height: 140%;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 140%;
+}
+h5 {
+  font-size: 18px;
+  line-height: 110%;
+}
+h6 {
+  font-size: 15px;
+  font-family: var(--font-family) !important;
+  line-height: 110%;
+  margin-bottom: 0;
+}
+p {
+  font-weight: 300;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    --global-margin: var(--space-12);
+    --global-padding: var(--space-20);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+}
+.font-light {
+  font-weight: 300;
+}
+.text-2xl {
+  font-size: 22px;
+}

@@ -1,0 +1,46 @@
+/* WYSIWYG */
+.flex-mod-wysiwyg .flex-mod-inner {
+  padding: var(--global-padding) 0;
+}
+.wysiwyg-container {
+  font-family: Inter;
+  font-weight: 300;
+}
+.wysiwyg-container :is(h2, h2, h3) {
+  font-family: Parkinsans;
+  font-weight: 300;
+}
+.wysiwyg-container h3 {
+  font-family: Parkinsans;
+  margin-top: 0;
+  margin-top: 48px;
+}
+.wysiwyg-container h3:first-of-type {
+  margin-top: 0;
+}
+.wysiwyg-container blockquote {
+  font-family: Parkinsans;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+  padding: 40px;
+}
+.wysiwyg-container blockquote p {
+  background-image: url(../../assets/ui/quotation_mark_coral.svg);
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  padding-left: 55px;
+  position: relative;
+}
+.wysiwyg-container li + li {
+  margin-top: 10px;
+}
+.wysiwyg-container li li {
+  list-style-type: disc;
+}
+.wysiwyg-container li::marker,
+.wysiwyg-container a {
+  color: var(--clr-coral);
+  text-decoration: none;
+}

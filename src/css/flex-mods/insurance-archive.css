@@ -1,0 +1,180 @@
+.flex-mod-insurance-archive .flex-mod-inner {
+    margin-top: 155px;
+    padding-top: 0;
+}
+.insurance-archive-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+}
+.insurance-archive-item {
+    color: var(--clr-white);
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.insurance-archive-item a {
+    color: var(--clr-white);
+}
+.insurance-archive-item .insurance-item-img {
+    aspect-ratio: 468 / 267;
+    border-radius: var(--border-radius-l);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.insurance-archive-item-container {
+    bottom: 20px;
+    left: 40px;
+    position: absolute;
+    right: 40px;
+    z-index: 10;
+}
+.insurance-circle-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index: 10;
+}
+.insurance-archive-item-inner {
+    max-width: 306px;
+}
+.insurance-archive-item-heading {
+    font-weight: 500;
+    margin: 0;
+}
+.insurance-archive-item-container .insurance-icon-wrapper svg {
+    height: auto;
+    margin-bottom: -28px;
+    margin-left: -28px;
+    stroke: var(--clr-white) !important;
+    width: 96px;
+}
+.insurance-archive-item-container .insurance-icon-wrapper svg * {
+    fill: none !important;
+    stroke: var(--clr-white) !important;
+}
+.insurance-archive-text-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+
+.insurance-archive-heading {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+.insurance-archive-p {
+    margin-bottom: 0;
+    margin-top: 24px;
+    text-align: center;
+}
+.scroll-to-heading {
+    background-color: var(--clr-white);
+    color: rgba(42, 16, 92, 0.66);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-tiny);
+    margin: 0 auto;
+    text-align: center;
+    height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 220px;
+}
+.scroll-to-line {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -9px;
+    z-index: -1;
+}
+.scroll-to-scrollbar {
+    display: flex;
+    gap: 8px;
+    height: 44px;
+    justify-content: center;
+    overflow-x: auto;
+    margin-top: 21px;
+}
+.scroll-to-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+.scroll-to-container {
+    display: none;
+    margin-top: 64px;
+}
+.scroll-to-container .btn {
+    font-size: var(--font-size-tiny) !important;
+    height: 43px !important;
+    line-height: 43px !important;
+    padding-left: 37px !important;
+    padding-right: 14px !important;
+}
+.scroll-to-container [data-btn-icon]::before {
+    background-size: 100%;
+    height: 43px !important;
+    left: 0 !important;
+    width: 43px !important;
+}
+.scroll-to-container [data-btn-icon="car"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_bil_black.svg);
+}
+.scroll-to-container [data-btn-icon="boat"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_baad_black.svg);
+}
+.scroll-to-container [data-btn-icon="elcar"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_elbil_black.svg);
+}
+.scroll-to-container [data-btn-icon="fritidshus"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_fritidshus_black.svg);
+}
+.scroll-to-container [data-btn-icon="hund"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_hund_black.svg);
+}
+.scroll-to-container [data-btn-icon="hus"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_hus_black.svg);
+}
+.scroll-to-container [data-btn-icon="indbo"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_indbo_black.svg);
+}
+.scroll-to-container [data-btn-icon="kat"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_kat_black.svg);
+}
+.scroll-to-container [data-btn-icon="knallert"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_knallert_black.svg);
+}
+.scroll-to-container [data-btn-icon="motorcykel"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_motorcykel_black.svg);
+}
+.scroll-to-container [data-btn-icon="rejse"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_rejse_black.svg);
+}
+.scroll-to-container [data-btn-icon="trailer"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_trailer_black.svg);
+}
+.scroll-to-container [data-btn-icon="ulykke"]::before {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_forsikring_ulykke_black.svg);
+}
+
+@media screen and (max-width: 1180px) {
+    .flex-mod-insurance-archive .flex-mod-inner {
+        margin-top: 0;
+    }
+    .insurance-archive-grid {
+        grid-template-columns: 100%;
+        margin-top: 32px;
+    }
+    .insurance-archive-item .insurance-item-img {
+        aspect-ratio: 370 / 166;
+    }
+    .insurance-archive-text-container {
+        display: none;
+    }
+    .scroll-to-container {
+        display: block;
+    }
+}

@@ -1,0 +1,10 @@
+/* IMG */
+.flex-mod-img .flex-mod-inner {
+  padding-bottom: var(--global-padding);
+  padding-top: var(--global-padding);
+}
+.flex-mod-img img {
+  border-radius: var(--border-radius-l);
+  height: auto;
+  width: 100%;
+}

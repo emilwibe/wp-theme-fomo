@@ -1,0 +1,117 @@
+/* CTA */
+/* BREAKPONT 960 */
+@media screen and (min-width: 961px) {
+  .splide-cta .splide__list {
+    display: grid !important;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .splide-cta .splide__slide {
+    display: flex;
+  }
+}
+@media screen and (max-width: 960px) {
+  .flex-mod-cta .splide__slide {
+    width: calc(100% - calc(4 * var(--global-margin))) !important;
+  }
+}
+.flex-mod-cta .card,
+#index-hero-cards .card {
+  aspect-ratio: 276 / 327;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.flex-mod-cta .card {
+  padding: var(--space-40);
+}
+@media screen and (max-width: 1024px) {
+  .flex-mod-cta .card {
+    padding: 30px 20px;
+  }
+}
+.flex-mod-cta .card-circle {
+  border: none !important;
+}
+.flex-mod-cta .btn-rounded,
+#index-hero-cards .btn-rounded {
+  border: none !important;
+}
+.flex-mod-cta .card-heading {
+  margin-bottom: 0;
+  max-width: 325px;
+}
+.flex-mod-cta .card-heading + *,
+#index-hero-cards .card-heading + * {
+  margin-top: 0;
+}
+#index-hero-cards .card-text {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-small);
+  line-height: 150%;
+  margin-top: 14px;
+}
+.flex-mod-cta .card-text {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-main);
+  max-width: 389px;
+}
+
+/* CTA ROW */
+.flex-mod-cta-row {
+  position: relative;
+}
+.flex-mod-cta-row .absolute-background {
+  background-color: var(--clr-light-rose);
+  height: calc(100% - calc(2 * var(--global-margin)));
+  position: absolute;
+  top: 66%;
+  width: 100%;
+  z-index: -1;
+}
+.flex-mod-cta-row .card {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 11;
+  height: 581px;
+  padding: var(--space-40);
+}
+.flex-mod-cta-row .card-circle {
+  border: none;
+}
+.flex-mod-cta-row .card-heading {
+  margin-bottom: 0;
+  margin-top: auto;
+  max-width: 520px;
+}
+.flex-mod-cta-row .card-text {
+  font-family: var(--font-secondary);
+  max-width: 389px;
+}
+.flex-mod-cta-row .card-heading + * {
+  margin-top: 0;
+}
+@media screen and (max-width: 960px) {
+  .flex-mod-cta-row .card {
+    aspect-ratio: 370 / 463;
+    grid-column: 1 / 13;
+    height: auto;
+    min-height: 0;
+  }
+  .flex-mod-cta-row .card .btn-container {
+    margin-top: 24px;
+  }
+  .flex-mod-cta-row .card-heading {
+    max-width: none;
+  }
+  .flex-mod-cta-row .card-text {
+    max-width: 300px;
+  }
+}
+.card .card-text {
+  margin-bottom: 0;
+  margin-top: 14px;
+}
+.card .btn-container {
+  margin-top: 40px;
+}

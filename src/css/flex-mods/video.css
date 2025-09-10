@@ -1,0 +1,96 @@
+/* Video */
+video {
+  border-radius: var(--border-radius-l);
+  display: block;
+  width: 100%;
+}
+.video-wrapper {
+  position: relative;
+}
+.video-btn-container-play,
+.video-btn-container-paused {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+.video-btn-container-play img:hover,
+.video-btn-container-paused img:hover {
+  cursor: pointer;
+}
+.paused ~ .hover-layer .video-btn-container-paused {
+  display: none;
+}
+.playing + .video-btn-container-play {
+  display: none;
+}
+img.flex-video-mod-pause-btn {
+  border-radius: 50%;
+  background-color: var(--clr-grey);
+}
+img.flex-video-mod-pause-btn:hover {
+  background-color: var(--clr-white);
+}
+.video-progress {
+  background-color: #d9d9d9;
+  bottom: var(--space-24);
+  height: 2px;
+  left: var(--space-24);
+  position: absolute;
+  width: calc(100% - calc(2 * var(--space-24)));
+  z-index: 6;
+}
+.video-progress:hover {
+  cursor: pointer;
+}
+.video-progress[value],
+.video-progress[value]::-webkit-progress-value {
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--clr-white);
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  color: var(--clr-white);
+}
+.video-btn-container-play + .hover-layer {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+video:hover ~ .hover-layer,
+.video-btn-container-play:hover ~ .hover-layer {
+  opacity: 1;
+  transition: opacity var(--animation-duration) var(--animation-cb);
+}
+.hover-layer:hover {
+  opacity: 1;
+}
+.video-time {
+  bottom: calc(2 * var(--space-24));
+  color: var(--clr-white);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-tiny);
+  position: absolute;
+  right: var(--space-24);
+  z-index: 8;
+}
+.flex-video-text-container {
+  bottom: calc(2 * var(--space-24));
+  left: var(--space-24);
+  position: absolute;
+  z-index: 8;
+}
+.flex-video-title {
+  color: var(--clr-coral);
+  margin-bottom: 0;
+}
+.flex-video-subtitle {
+  color: var(--clr-white);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-small);
+  line-height: 150%;
+  margin: 0;
+}

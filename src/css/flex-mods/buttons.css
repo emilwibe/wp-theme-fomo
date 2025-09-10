@@ -1,0 +1,26 @@
+/* BUTTONS */
+.btn-container.btn-center {
+  justify-content: center;
+}
+.btn-container-rose {
+  display: flex;
+  margin: var(--global-margin) 0;
+}
+.global-hero .btn-container-rose {
+  margin-bottom: 0;
+}
+.btn-rose {
+  align-items: center;
+  background-color: var(--clr-light-rose);
+  border-radius: 20px;
+  color: var(--clr-black-blue);
+  display: flex;
+  font-weight: 300;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+.btn-rose .btn-arrow {
+  height: auto;
+  margin-left: 12px;
+  width: 18px;
+}

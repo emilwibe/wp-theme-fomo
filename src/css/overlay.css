@@ -1,0 +1,96 @@
+.global-overlay {
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-timing-function: var(--animation-cb);
+  background-color: rgba(20, 20, 43, 0.5);
+  opacity: 0;
+  position: fixed;
+  left: -999px;
+  top: 0;
+  transition: opacity 450ms;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.overlay-is-visible .global-overlay {
+  left: 0;
+  opacity: 1;
+  z-index: 55;
+}
+.global-modal {
+  background-color: var(--clr-white);
+  border-radius: var(--border-radius-l);
+  /*min-height: 728px;*/
+  opacity: 0;
+  position: fixed;
+  right: 999px;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: -1;
+  width: 1175px;
+}
+.global-modal-inner {
+  max-height: 86vh;
+  overflow-y: auto;
+  padding: 64px 40px 40px 40px;
+}
+.global-modal.is-visible {
+  opacity: 1;
+  right: 35px;
+  z-index: 60;
+}
+.close-modal {
+  color: var(--clr-white);
+  height: 31px;
+  line-height: 31px;
+  padding-right: 43px;
+  position: absolute;
+  right: 0;
+  top: -24px;
+  transform: translateY(-100%);
+}
+.close-modal:hover {
+  cursor: pointer;
+}
+.close-modal::after {
+  background-color: var(--clr-white);
+  background-image: url(../../assets/ui/icons/cross_coral.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 31px;
+  width: 31px;
+}
+@media screen and (max-width: 1250px) {
+  .global-modal {
+    min-height: 0;
+    height: calc(100vh - 200px);
+    top: 160px;
+    transform: none;
+  }
+  .global-modal-inner {
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-color: var(--clr-coral) var(--clr-white);
+    scrollbar-width: thin;
+  }
+  .global-modal.is-visible {
+    right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .global-modal-inner {
+    padding: 40px 20px 20px 20px;
+  }
+}

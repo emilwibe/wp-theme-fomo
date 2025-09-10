@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter/Inter_18pt-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Parkinsans;
+  src: url(./assets/fonts/Parkinsans/Parkinsans-Regular.ttf);
+}
+@font-face {
+  font-family: Parkinsans;
+  src: url(./assets/fonts/Parkinsans/Parkinsans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Parkinsans;
+  src: url(./assets/fonts/Parkinsans/Parkinsans-ExtraBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Parkinsans;
+  src: url(./assets/fonts/Parkinsans/Parkinsans-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Parkinsans;
+  src: url(./assets/fonts/Parkinsans/Parkinsans-SemiBold.ttf);
+  font-weight: 500;
+}
+
+body#tinymce.wp-editor {
+  font-family: Inter;
+  font-size: 17px;
+  margin: 10px;
+}
+body#tinymce > *:first-of-type,
+body#tinymce > *:first-child {
+  margin-top: 0;
+}
+body#tinymce.wp-editor a {
+  color: #ff8689;
+  text-decoration: none;
+}
+body#tinymce h2 {
+  color: #14142b;
+  font-family: Parkinsans;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 48px;
+}
+body#tinymce h3 {
+  color: #14142b;
+  font-family: Parkinsans;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 48px;
+}
+body#tinymce h4 {
+  color: #14142b;
+  font-family: Parkinsans;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 48px;
+}
+body#tinymce h5 {
+  color: #14142b;
+  font-family: Parkinsans;
+  font-size: 18px;
+}
+body#tinymce h6 {
+  color: #14142b;
+  font-family: Parkinsans;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+body#tinymce h6 + * {
+  margin-top: 8px;
+}
+body#tinymce.wp-editor p {
+  font-family: Inter;
+  margin-top: 16px;
+}
+
+
+body#tinymce .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+body#tinymce .btn-container.btn-center {
+  justify-content: center;
+}
+
+body#tinymce .btn-container .btn {
+  border-radius: 40px;
+  display: block;
+  font-family: "Inter";
+  font-size: 14px;
+
+  height: 37px;
+  line-height: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+body#tinymce .btn-container .btn.small {
+  height: 34px;
+  line-height: 34px;
+}
+
+body#tinymce .btn-container .btn.bg-light-rose {
+  background-color: #ffebe1;
+}
+body#tinymce .btn-container .btn.c-black-blue {
+  color: #14142b;
+}
+
+body#tinymce .btn-container .btn.icon-after {
+  padding-right: 38px;
+  position: relative;
+}
+body#tinymce .btn-container .btn.icon-after::after {
+  background-position-x: 0;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 18px;
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-position-x 450ms, background-position-y 450ms;
+  width: 18px;
+}
+
+body#tinymce .btn-container .btn.icon-after.icon-bg-coral::after {
+  background-color: #ff8689;
+}
+
+body#tinymce .btn-container .btn.icon-after.arrow-right-black-blue::after {
+  background-image: url(assets/ui/icons/arrow_right_black_blue.svg);
+}
+
+body#tinymce .btn-container .btn.animate-right:hover::after {
+  background-position-x: 18px;
+  background-repeat: repeat-x;
+}

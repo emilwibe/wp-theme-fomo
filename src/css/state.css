@@ -1,0 +1,21 @@
+.fade-on-load {
+    animation-duration: 450ms;
+    animation-fill-mode: forwards;
+    animation-name: fade-in;
+    animation-play-state: paused;
+    animation-timing-function: var(--animation-cb);
+    opacity: 0;
+}
+
+/* FLEX */
+/* LATES NEWS */
+.post-is-closed + .flex-latest-news-post-content {
+    display: none;
+}
+.flex-latest-news-post-content {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+.flex-latest-news-post-content.post-content-hidden {
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+.flex-mod-img-breaker {
+    margin-top: 130px;
+}
+.flex-mod-img-breaker .flex-mod-inner {
+    padding-bottom: 0;
+}
+.flex-mod-img-breaker img {
+    aspect-ratio: 1440 / 535;
+    border-radius: var(--border-radius-l);
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+@media screen and (max-width: 1024px) {
+    .flex-mod-img-breaker {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .flex-mod-img-breaker .flex-mod-inner {
+        padding-top: 0;
+    }
+    .flex-mod-img-breaker img {
+        aspect-ratio: 370 / 284;
+    }
+}

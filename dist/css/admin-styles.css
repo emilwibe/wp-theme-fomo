@@ -1,0 +1,142 @@
+@import url("../../src/css/fonts.css");
+
+:root {
+  --animation-duration: 450ms;
+  --animation-cb: easeOutQuad;
+  --border-radius-l: 20px;
+  --border-radius-s: 8px;
+  --clr-black-blue: #14142b;
+  --clr-purple: #2a105c;
+  --clr-grey: #dfdfdf;
+  --clr-grey-light: #f5f5f5;
+  --clr-coral: #ff8689;
+  --clr-bordeaux: #3b193d;
+  --clr-light-rose: #ffebe1;
+  --clr-white: #fff;
+  --clr-light-blue: #daeafd;
+  --font-family: "Parkinsans";
+  --font-size-main: 17px;
+  --font-size-small: 14px;
+  --font-size-tiny: 12px;
+}
+#ew_footer_p_1 textarea {
+  color: var(--clr-black-blue);
+  font-family: Parkinsans;
+  font-size: var(--font-size-tiny);
+  opacity: 0.66;
+  text-align: center;
+}
+#footer-colophon textarea {
+  color: var(--clr-black-blue);
+  font-family: Parkinsans;
+  font-size: var(--font-size-tiny);
+  opacity: 0.66;
+}
+
+#index-hero-heading input {
+  color: var(--clr-black-blue);
+  font-family: Parkinsans;
+  font-size: 54px;
+}
+#index-hero-text textarea {
+  color: var(--clr-black-blue);
+  font-family: Parkinsans;
+  font-size: 22px;
+}
+#index-hero-card-1-heading input, #index-hero-card-2-heading input{
+  font-family: Parkinsans;
+  font-size: 22px;
+}
+#index-hero-card-1-heading, #hero-index-card-1-p, #index-hero-card-1-btn-p, #index-hero-card-1-btn-url {
+  background-color: var(--clr-light-blue);
+}
+#hero-index-card-1-p textarea, #hero-index-card-2-p textarea{
+  font-family: Parkinsans;
+}
+#index-hero-heading-2 input {
+  font-family: Parkinsans;
+  font-size: 22px;
+}
+.bordeaux-bg input, .bordeaux-bg textarea {
+  background-color: var(--clr-bordeaux);
+  color: var(--clr-white);
+  font-family: Parkinsans;
+}
+.coral-bg input, .coral-bg textarea {
+  background-color: var(--clr-coral);
+  color: var(--clr-purple);
+}
+
+/* WYSIWYG */
+.flex-wysiwyg #tinymce h3 {
+  color: red !important;
+}
+
+[data-layout="flex_img_txt"] .acf-fields {
+  display: flex;
+}
+[data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(1) {
+  order: 2;
+}
+[data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(2) {
+  order: 1;
+}
+
+[data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(1) {
+  order: 1;
+}
+[data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(2) {
+  order: 2;
+}
+
+[data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(1) {
+  order: 2;
+}
+[data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] + [data-layout="flex_img_txt"] .acf-fields .acf-field:nth-child(2) {
+  order: 1;
+}
+[data-name*="flex_cta_icon"] [type="radio"]::after {
+  background-color: #fff;
+  background-position: center;
+  background-size: auto 160%;
+  content: '';
+  display: block;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+  width: 28px;
+}
+[data-name*="flex_cta_icon"] [type="radio"]:hover::after {
+  transform: scale(2);
+  z-index: 10;
+}
+[value="patch"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_anmeld_skade_Purple_RGB.svg);
+}
+[value="calc_price"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_beregn_din_pris_Purple_RGB.svg);
+}
+[value="call"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_bliv_ringet_op_Purple_RGB.svg);
+}
+[value="community"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_faellesskab_Purple_RGB.svg);
+}
+[value="faq"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_FAQ_Purple_RGB.svg);
+}
+[value="gjensidige"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_Gjensidige_Purple_RGB.svg);
+}
+[value="advices"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_gode_raad_Purple_RGB.svg);
+}
+[value="contact"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_kontakt_os_Purple_RGB.svg);
+}
+[value="my_site"]::after {
+  background-image: url(../../assets/ui/fomo-ikoner/ikon_CTA_min_side__Purple_RGB.svg);
+}

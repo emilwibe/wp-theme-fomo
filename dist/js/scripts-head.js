@@ -1,0 +1,1 @@
+{let t=sessionStorage.getItem("notification-bar");t&&"dismissed"==t&&document.documentElement.classList.add("notification-closed")}
