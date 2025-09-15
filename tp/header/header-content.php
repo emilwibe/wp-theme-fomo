@@ -35,7 +35,7 @@
         </a>
 
         <p class="header-socket-right">
-            <a href="<?php echo get_field('header-socket-right-URL', 'option'); ?>" class="header-socket"><?php echo get_field('header-socket-right', 'option'); ?></a>
+            <a href="<?php echo get_field('header-socket-right-URL', 'option'); ?>" class="header-socket" target="_blank"><?php echo get_field('header-socket-right', 'option'); ?></a>
         </p>
 
     </div><!--/.l-wrapper-->
