@@ -74,11 +74,28 @@
 
                                     <?php while (have_rows('flex_intrflex_intro_grey_box_btn')) : the_row(); ?>
 
-                                        <?php if (get_sub_field('flex_intrflex_intro_grey_box_btn_file') && get_sub_field('flex_intrflex_intro_grey_box_btn_txt')) : ?>
+                                        <?php if (get_sub_field('flex_intrflex_intro_grey_box_btn_txt')) : ?>
 
-                                            <div class="btn-container">
-                                                <a href="<?php echo get_sub_field('flex_intrflex_intro_grey_box_btn_file'); ?>" class="btn small bg-white c-black-blue icon-after icon-before document-purple icon-bg-coral arrow-down-purple animate-down" download=""><?php echo get_sub_field('flex_intrflex_intro_grey_box_btn_txt'); ?></a>
-                                            </div>
+                                            <?php
+                                            if (get_sub_field('flex_intrflex_intro_grey_box_btn_link')) :
+                                                $conditions = get_sub_field('flex_intrflex_intro_grey_box_btn_link');
+                                                $conditions_title = $conditions['title'];
+                                                $conditions_url = $conditions['url'];
+                                                $conditions_target = $conditions['target'];
+
+                                            ?>
+
+                                                <div class="btn-container">
+                                                    <a href="<?php echo $conditions_url; ?>" target="<?php echo $conditions_target; ?>" class="btn small bg-white c-black-blue icon-after icon-before document-purple icon-bg-coral arrow-down-purple animate-down"><?php echo $conditions_title; ?></a>
+                                                </div>
+
+                                            <?php elseif (get_sub_field('flex_intrflex_intro_grey_box_btn_file')) : ?>
+
+                                                <div class="btn-container">
+                                                    <a href="<?php echo get_sub_field('flex_intrflex_intro_grey_box_btn_file'); ?>" class="btn small bg-white c-black-blue icon-after icon-before document-purple icon-bg-coral arrow-down-purple animate-down" download=""><?php echo get_sub_field('flex_intrflex_intro_grey_box_btn_txt'); ?></a>
+                                                </div>
+
+                                            <?php endif; ?>
 
                                         <?php endif; ?>
 
