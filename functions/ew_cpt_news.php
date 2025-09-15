@@ -50,6 +50,9 @@ function register_cpt_ew_news() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite'				=> array(
+			'slug'			=>	'nyhed'
+		)
 	);
 	register_post_type( 'fomo_news', $args );
 
