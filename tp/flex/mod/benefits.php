@@ -102,11 +102,11 @@
 
                                     <div class="faq-item-content">
 
-                                        <p><?php the_sub_field('flex_benefits_acc_left_txt'); ?></p>
+                                        <p><?php the_sub_field('flex_benefits_acc_right_txt'); ?></p>
 
-                                        <?php if (get_sub_field('flex_benefits_acc_right_url')) :
+                                        <?php if (get_sub_field('flex_benefits_acc_left_url')) :
 
-                                            $benefits_link_data = get_sub_field('flex_benefits_acc_right_url');
+                                            $benefits_link_data = get_sub_field('flex_benefits_acc_left_url');
                                             $benefits_link_txt = $benefits_link_data["title"];
                                             $benefits_link_url = $benefits_link_data["url"];
                                             $benefits_link_target = $benefits_link_data["target"];
