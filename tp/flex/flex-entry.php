@@ -59,6 +59,8 @@
             get_template_part( 'tp/flex/mod/img-grid' );
         } elseif ( get_row_layout() == 'flex_intro_call_me' ) {
             get_template_part( 'tp/flex/mod/intro-call-me' );
+        } elseif ( get_row_layout() == 'flex_trustpilot_widget' ) {
+            get_template_part( 'tp/flex/mod/tp-widget' );
         }
     }
 
